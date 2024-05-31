@@ -2,10 +2,13 @@ body {
     padding: 0px;
     margin: 0px;
     background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
 }
+
 
 .cabecalho {
     background-color: rgb(26, 24, 24);
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -29,6 +32,7 @@ body {
 }
 
 .mainLogin {
+    margin-left: 35%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,3 +85,45 @@ body {
     font-style: bold;
 }
 
+.mudarSenha {
+    text-decoration: underline;
+}
+
+.mainMudarSenha {
+    display: none;
+    background-color: rgb(26, 24, 24);
+    margin-top: 10.50rem;
+    margin-left: 35%;
+    width: 25rem;
+    height: 10rem;
+    border: 5px solid white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.divSenha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.textoEmailAlt {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: rgb(245, 90, 42);
+}
+
+.campoEmailAlt {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    width: 90%;
+}
+
+.botaoEmailAlt {
+    background-color: #79451d;
+    border: 2px solid wheat;
+    border-radius: 5px;
+    width: 10rem;
+    height: 2rem;
+}

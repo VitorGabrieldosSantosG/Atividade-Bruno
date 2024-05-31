@@ -1,55 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="./assets/CSS/telaInvestimentos.CSS">
-</head>
-<body>
-    <header class="cabecalho">
-        <img src="./assets/IMG/logo.png" alt="Imagem da logo UniInvest" class="imagemLogo">
-        <h2 class="tituloCabecalho">UniInvest</h2>
-        <img src="./assets/IMG/Botão Menu.png" alt="Botão para acessar o menu" class="botaoMenu">
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tela Investimentos</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/CSS/index.css">
+        <link rel="stylesheet" href="./assets/CSS/telaInvestimentos.CSS">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <img
+                src="./assets/IMG/logo.png"
+                alt="Imagem da logo UniInvest"
+                class="imagemLogo">
+            <h2 class="tituloCabecalho">UniInvest</h2>
+            <img
+                src="./assets/IMG/Botão Menu.png"
+                alt="Botão para acessar o menu"
+                class="botaoMenu">
+        </header>
 
-    <main>
-        <h2 class="tituloInvestimentos">Investimentos</h2>
+        <main>
 
-        <div class="card1">
-            <h2 class="nomeInvestimento">Investimento X</h2>
-            <div class="divInvestimento">
-                <img src="./assets/IMG/imagemCliente.jpg" alt="Imagem do Investimento" class="fotoInvestimento">
-                <div class="info-text">
-                    <div class="divPrecoMedio">
-                        <h3 class="textopreco">Preço Médio:</h3>
-                        <h3 class="textoPrecoMedio"> R$43,90</h3>
-                    </div>
-                    <div class="divValorAplicado">
-                        <h3 class="textoValorAplicado">Valor Aplicado: </h3>
-                        <h3 class="valorAplicado">R$5.000,00</h3>
-                    </div>
-                    <div class="divRendimentoBruto">
-                        <h3 class="textoRendimentoBruto">Rendimento Bruto: </h3>
-                        <h3 class="rendimentoBruto">R$220,00</h3>
-                    </div>
-                    <div class="divQuantidade">
-                        <h3 class="textoQuantidade">Quantidades: </h2>
-                        <h3 class="valorQuantidade">114</h2>
-                    </div>
-                    <div class="divProvento">
-                        <h3 class="textoProventos">Proventos:</h3>
-                        <h3 class="valorProventos"> R$25,50</h3>
-                    </div>
+            <div class="campoContas" id="campoContas">
 
-                    <a href="">
-                        <button class="botaoEdicao">Realizar alterações</button>
-                    </a>
+                <div class="imagemContas" id="divFotos">
+                    <h2 class="textoContas">Contas conectadas:</h2>
+                    <img
+                        src="./assets/IMG/contaNubank.png"
+                        alt="Imagem icone do aplicativo Nubank"
+                        class="imagemConta" id="Nubank">
+                    <img
+                        src="./assets/IMG/contaRico.png"
+                        alt="Imagem icone do aplicativo Rico"
+                        class="imagemConta" id="Rico">
+                    <img
+                        src="./assets/IMG/contaItau.png"
+                        alt="Imagem icone do aplicativo Itau"
+                        class="imagemConta" id="Itau">
+                    <img
+                        src="./assets/IMG/contaXP.png"
+                        alt="Imagem icone do aplicativo XP"
+                        class="imagemConta" id="XP">
+                    <img src="./assets/IMG/botaoAdicionar.png" alt="" class="imagemConta  botaoAdicionar1" id="botaoAdicionar">
                 </div>
             </div>
 
-        </div>
-        
-    </main>
-</body>
+            <div class="menuEditarConta" id="menuEditarContas">
+                <div class="campoEditar">
+                    <label for="campoNomeEditar" class="textoNomeEditar">Nome do banco</label>
+                    <input type="text" class="campoNomeEditar" id="campoNomeEditar">
+                    <label for="campoAgenciaEditar" class="textoAgenciaEditar">Número da agência</label>
+                    <input type="text" class="campoAgenciaEditar" id="campoAgenciaEditar">
+                    <label for="campoContaEditar" class="textoContaEditar">Número da Conta</label>
+                    <input type="text" class="campoContaEditar" id="campoContaEditar">
+                    <label for="campoSenhaEditar" class="textoSenhaEditar">Número da senha</label>
+                    <input type="text" class="campoSenhaEditar" id="campoSenhaEditar">
+                    <button class="Alterar" id="alterar">Alterar</button>
+                </div>
+            </div>
+
+           <div class="menuAdicionarConta" id="adicionar">
+                <div class="campoAdicao">
+                    <label for="campoURL" class="textoURL" id="textoURL">Insira a Url da Imagem</label>
+                    <input type="text" class="campoURL" id="campoURL">
+
+                    <label for="campoNomeBanco" class="textoNomeBanco" id="textoNomeBanco">Insira o nome do banco</label>
+                    <input type="text" class="campoNomeBanco" id="campoNomeBanco">
+                    <label for="campoAgencia" class="textoAgencia" id="textoAgencia">Insira o número da Agência</label>
+                    <input type="text" class="campoAgencia" id="campoAgencia">
+                    <label for="campoConta" class="textoConta">Insira o número da conta</label>
+                    <input type="text" class="campoConta" id="campoConta">
+                    <label for="campoSenha" class="textoSenha">Insira a senha da conta</label>
+                    <input type="text" class="campoConta" id="campoConta">
+                    <button class="finalizarAdicao" id="finalizarConta">Finalizar Adição</button>
+                </div>
+            </div>
+
+            <div class="investimentos" id="investimentos">
+                <h2 class="tituloInvestimentos">Investimentos</h2>
+
+                <div class="card1">
+                    <h2 class="nomeInvestimento">Investimento X</h2>
+                    <div class="divInvestimento">
+                        <img
+                            src="./assets/IMG/iconeCopel.png"
+                            alt="Imagem do Investimento"
+                            class="fotoInvestimento">
+                        <div class="info-text">
+                            <div class="divPrecoMedio">
+                                <h3 class="textopreco">Preço Médio:</h3>
+                                <h3 class="textoPrecoMedio">
+                                    R$43,90</h3>
+                            </div>
+                            <div class="divValorAplicado">
+                                <h3 class="textoValorAplicado">Valor Aplicado:
+                                </h3>
+                                <h3 class="valorAplicado">R$5.000,00</h3>
+                            </div>
+                            <div class="divRendimentoBruto">
+                                <h3 class="textoRendimentoBruto">Lucro Bruto:
+                                </h3>
+                                <h3 class="rendimentoBruto">R$220,00</h3>
+                            </div>
+                            <div class="divQuantidade">
+                                <h3 class="textoQuantidade">Quantidades:
+                                </h2>
+                                <h3 class="valorQuantidade">114</h2>
+                            </div>
+                            <div class="divProvento">
+                                <h3 class="textoProventos">Proventos:</h3>
+                                <h3 class="valorProventos">
+                                    R$25,50</h3>
+                            </div>
+
+                            <a href="">
+                                <img src="./assets/IMG/botaoEditar.png" class="botaoEditar">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <script src="./assets/JS/telaInvestimento.js"></script>
+        </main>
+    </body>
 </html>

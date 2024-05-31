@@ -35,18 +35,18 @@ body {
 }
 
 .card1 {
-    background-color: wheat;
+    background-color: rgb(64, 59, 59);
     margin-left: 2rem;
     border: 5px solid white;
     border-radius: 10px;
-    height: 37rem;
+    height: 39rem;
     width: 25rem;
-    overflow: hidden;
+
 }
 
 .card3 {
     margin-right: 2rem;
-    flex-basis: 100%;
+
 }
 
 .headerCliente {
@@ -108,17 +108,20 @@ body {
     border:none;
     font-size: 2rem;
     margin-left: 1rem;
+    color: rgb(245, 90, 42);
+    font-family: "Merriweather", serif;
 }
 
 .botao {
-    background-color: rgb(235, 235, 133);
-    color: black;
+    background-color: #413726;
+    color: rgb(245, 90, 42);   
+    border: 5px solid wheat;
+    border-radius: 5px; 
     font-family: "Zilla Slab", serif;
     margin-left: 30%;
     margin-top: 5%;
-
     width: 10rem;
     height: 4rem;
-    border-radius: 5px;
+    text-transform: uppercase;
 }
 

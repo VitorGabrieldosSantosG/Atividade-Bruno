@@ -18,19 +18,29 @@
     </header>
 
     <main>
-        <div class="mainLogin">
+        <div class="mainLogin" id="menuInicial">
             <div class="login">
                 <h1 class="textoLogin">Realize o seu login</h1>
                 <label for="textoEmail" class="textoEmail">Insira seu e-mail!</label>
-                <input type="text" class="campoEmail">
+                <input type="text" class="campoEmail" id="textoEmail">
                 <label for="textoSenha" class="textoSenha">Insira sua Senha!</label>
-                <input type="text" class="campoSenha">
+                <input type="text" class="campoSenha" id="textoSenha">
                 <a href="./telaInicial.html">
                     <button class="botaoEntrar" >ENTRAR</button>
                 </a>
-                
+                <h2 class="mudarSenha" id="textoEsqueciASenha">Esqueci a senha</h2>
+            </div>
+        </div>
+
+        <div class="mainMudarSenha" id="menuMudarSenha">
+            <div class="divSenha">
+                <label for="campoEmailAlt" class="textoEmailAlt">Insira seu e-mail para o envio de uma nova senha</label>
+                <input type="text" class="campoEmailAlt" id="campoEmailAlt">
+                <button class="botaoEmailAlt" id="botaoMudarSenha">Enviar Email</button>
             </div>
         </div>
     </main>
+
+    <script src="./assets/JS/index.js"></script>
 </body>
 </html>

@@ -19,6 +19,7 @@ body {
 
 .tituloCabecalho {
     color: rgb(245, 90, 42);
+    font-family: "Merriweather", serif;
 }
 
 .botaoMenu {
@@ -39,25 +40,44 @@ body {
 .login {
     margin-top: 10.50rem;
     width: 25rem;
-    position: center;
     display: flex;
     flex-direction: column;
-    background-color: rgb(54, 54, 193);
-    border: 5px solid black;
+    align-items: center;
+    background-color: rgb(26, 24, 24);
+    border: 5px solid rgb(255, 255, 255);
     border-radius: 5px;
     padding: 0 2rem 2rem 2rem;
 }
 
 .textoEmail, .textoSenha {
-    margin: 0 0 2rem 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-family: "Merriweather", serif;
+    color: wheat;
 }
-.botaoEntrar {
-    margin-left: 45%;
-    margin-top: 5%;
 
-    color: black;
+.campoSenha, .campoEmail {
+    width: 95%;
+}
+
+.campoSenha {
+    margin-bottom: 1rem;
+}
+
+.textoLogin {
+    font-family: "Merriweather", serif;
+    color: white;
+}
+
+.botaoEntrar {
+    color: wheat;
     background-color: orange;
-    border: black 2px solid;
+    border: rgb(0, 0, 0) 2px solid;
     border-radius: 5px;
+    width: 250px;
+    height: 25px;
+    margin-top: 5%;
+    font-family: "Zilla Slab", serif;
+    font-style: bold;
 }
 

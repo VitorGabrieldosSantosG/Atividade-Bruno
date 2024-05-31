@@ -28,8 +28,8 @@ body {
 
 .card1 {
     background-color: rgb(77, 156, 209);
-    width: 25rem;
-    height: 27rem;
+    width: 75%;
+    height: 20rem;
     border: 5px solid black;
     border-radius: 5px;
     margin-left: 5rem;
@@ -63,8 +63,14 @@ body {
 
 .info-text {
     display: flex;
-    align-items: space-between;
+    flex-direction: row;
 }
+
+.divPrecoMedio, .divValorAplicado, .divRendimentoBruto, .divQuantidade, .divProvento {
+    display: flex;
+    margin-left: 0.5rem;
+}
+
 
 .fotoInvestimento {
     width: 50px;

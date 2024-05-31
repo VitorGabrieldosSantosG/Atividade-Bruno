@@ -19,59 +19,106 @@ body {
 
 .tituloCabecalho {
     color: rgb(245, 90, 42);
+    font-family: "Merriweather", serif;
 }
 
 .tituloCliente {
     margin-left: 5rem;
-    color:rgb(245, 90, 42) ;
+    color:rgb(245, 90, 42);
+    font-family: "Merriweather", serif;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .card1 {
-    background-color: rgb(77, 156, 209);
+    background-color: wheat;
+    margin-left: 2rem;
+    border: 5px solid white;
+    border-radius: 10px;
+    height: 37rem;
     width: 25rem;
-    height: 27rem;
-    border: 5px solid black;
-    border-radius: 5px;
-    margin-left: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    overflow: hidden;
 }
 
-.card1 .cliente-info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    margin-top: 1rem;
-}
-
-.card1 .cliente-info img.fotoCliente {
+.card3 {
     margin-right: 2rem;
+    flex-basis: 100%;
 }
 
-.card1 .info-text {
+.headerCliente {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.nomeCliente {
-    border-bottom: 5px solid black;
-    text-align: center;
-    width: 100%;
-
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid black;
 }
 
 .fotoCliente {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-left: 2rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 45%;
+    margin: 1rem;
 }
 
 
+.informacaoCliente {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.valorStatus, .valorValor, .valorLucros {
+    margin-left:40%;   
+}
 
 
+.statusCliente, .valorInvestido, .lucros, .nomeCliente{
+    font-family:"Merriweather", serif ;
+    border: 5px solid black;
+    
+    width: 24.5rem;
+}
+
+.textoStatus, .textoValor, .textoLucros {
+    margin-left: 1rem;
+}
+
+.valorStatus, .valorValor, .valorLucros {
+    margin-left: 8rem;
+}
+
+.valorStatus {
+    color: red;
+}
+
+.valorLucros {
+    color: green;
+}
+
+.lucros {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.nomeCliente {
+    border-top: none;
+    border:none;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.botao {
+    background-color: rgb(235, 235, 133);
+    color: black;
+    font-family: "Zilla Slab", serif;
+    margin-left: 30%;
+    margin-top: 5%;
+
+    width: 10rem;
+    height: 4rem;
+    border-radius: 5px;
+}
 

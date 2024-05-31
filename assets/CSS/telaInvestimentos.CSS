@@ -28,37 +28,35 @@ body {
 
 .card1 {
     background-color: rgb(77, 156, 209);
-    width: 75%;
-    height: 20rem;
+    width: 88%;
+    height: 8.5rem;
     border: 5px solid black;
-    border-radius: 5px;
+    border-radius: 6px;
     margin-left: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .card1 .divInvestimento {
     display: flex;
     flex-direction: row;
     width: 100%;
-
 }
 
 .divInvestimento {
-    align-items: start;
-}
-
-.card1 .divInvestimento img.fotoInvestimento {
-    margin-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .nomeInvestimento {
-    border-bottom: 5px solid black;
+    border-bottom: 6px solid black;
     text-align: center;
     width: 100%;
-
 }
 
 .info-text {
@@ -68,18 +66,30 @@ body {
 
 .divPrecoMedio, .divValorAplicado, .divRendimentoBruto, .divQuantidade, .divProvento {
     display: flex;
-    margin-left: 0.5rem;
+    width: 19%;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    border-right: 5px solid black; /* Adiciona a barra preta à direita */
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    margin-top: -1.5rem;
 }
 
+.divPrecoMedio {
+    border: 5px solid black;
+}
 
 .fotoInvestimento {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    margin-left: 2rem;
-    margin-bottom: 25rem;
+    border: black 5px solid;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top:-20px;
 }
 
-
-
-
+/* Remove a barra preta do último elemento */
+.divInvestimento > div:last-child {
+    border-right: none;
+}
